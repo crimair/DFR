@@ -59,7 +59,7 @@ if __name__ == "__main__":
     #    On the whole data
     #########################################
     cfg = config()
-    cfg.save_path = "/home/jie/Python-Workspace/Pycharm-Projects/Anomaly-2020/DFR-Baseline"
+    #cfg.save_path = "/home/jie/Python-Workspace/Pycharm-Projects/Anomaly-2020/DFR-Baseline"
     # cfg.model_name = ""
 
     # feature extractor
@@ -77,8 +77,8 @@ if __name__ == "__main__":
     # train or evaluation
     for data_name in data_names:
         cfg.data_name = data_name
-        cfg.train_data_path = "/home/jie/Datasets/MVAomaly/" + data_name + "/train/good"
-        cfg.test_data_path = "/home/jie/Datasets/MVAomaly/" + data_name + "/test"
+        #cfg.train_data_path = "/home/jie/Datasets/MVAomaly/" + data_name + "/train/good"
+        #cfg.test_data_path = "/home/jie/Datasets/MVAomaly/" + data_name + "/test"
 
         dfr = AnoSegDFR(cfg)
         if cfg.mode == "train":
